@@ -1,0 +1,6 @@
+.vscode
+node_modules
+.idea
+.DS_STORE
+thumbs.db
+*.log
