@@ -25,7 +25,7 @@ test("[1, 2, 3] should not equal [1,2,3,4]", () => {
 
 // Compare objects
 test("{ message: 'hello' } should equal { message: 'hello' }", () => {
-	expect([1, 2, 3]).toEqual([1, 2, 3])
+	expect({ message: 'hello' }).toEqual({ message: 'hello' })
 })
 
 // Compare objects to not equal
