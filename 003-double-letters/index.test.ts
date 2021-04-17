@@ -6,27 +6,27 @@ describe('splitOnDoubleLetter', () => {
     });
 
     test('Should split word in two parts',() => {
-        expect(splitOnDoubleLetter('Letter')).toEqual(['let','ter'])
+        expect(splitOnDoubleLetter('Letter')).toEqual(['Let','ter'])
     });
 
     test('Should split word in two parts',() => {
-        expect(splitOnDoubleLetter('Really')).toEqual(['real','ly'])
+        expect(splitOnDoubleLetter('Really')).toEqual(['Real','ly'])
     });
 
     test('Should split word in two parts',() => {
-        expect(splitOnDoubleLetter('Happy')).toEqual(['hap','py'])
+        expect(splitOnDoubleLetter('Happy')).toEqual(['Hap','py'])
     });
 
     test('Should split word in two parts',() => {
-        expect(splitOnDoubleLetter('Shall')).toEqual(['shal','l'])
+        expect(splitOnDoubleLetter('Shall')).toEqual(['Shal','l'])
     });
 
     test('Should split word in two parts',() => {
-        expect(splitOnDoubleLetter('Tool')).toEqual(['to','ol'])
+        expect(splitOnDoubleLetter('Tool')).toEqual(['To','ol'])
     });
 
     test('Should split word in four parts',() => {
-        expect(splitOnDoubleLetter('Mississippi')).toEqual(['mis','sis','sip','pi'])
+        expect(splitOnDoubleLetter('Mississippi')).toEqual(['Mis','sis','sip','pi'])
     });
 
     test('Should return [] on empty word',() => {
@@ -34,7 +34,7 @@ describe('splitOnDoubleLetter', () => {
     });
 
     test('Should split word in four parts',() => {
-        expect(splitOnDoubleLetter('AAAA')).toEqual(['a','a','a','a'])
+        expect(splitOnDoubleLetter('AAAA')).toEqual(['A','A','A','A'])
     });
 
     test('Should return [] on single letter',() => {
