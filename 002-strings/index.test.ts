@@ -30,7 +30,7 @@ describe('buildString', () => {
         expect(() => buildString()).toThrow('No words given')
     })
     
-    test('should throw - No numbers allowed', () => {
-        expect(() => buildString(1, 2)).toThrow('No numbers allowed')
-    })
+    // test('should throw - No numbers allowed', () => {
+    //     expect(() => buildString(1, 2)).toThrow('No numbers allowed')
+    // })
 })
