@@ -1,7 +1,7 @@
 import { maximumProfit } from './index'
 
 describe('Kata 005 Maximum Profit', () => {
-    test('Should return 0 when no profit can be made', () => {
+    test('Should return 0 when supplied with []', () => {
         expect(maximumProfit([])).toBe(0)
     })
 
