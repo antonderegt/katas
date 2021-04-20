@@ -6,11 +6,11 @@ export function maximumProfit(stockPrices) {
 
     for(let i = 1; i < stockPrices.length; i++) {
         const dailyProfit = stockPrices[i] - stockPrices[i - 1]
-        
+
         if(runningProfit + dailyProfit > 0) runningProfit += dailyProfit
         
         maxProfit = Math.max(runningProfit, maxProfit)
     }
 
-    return maxProfit;
+    return maxProfit
 }
