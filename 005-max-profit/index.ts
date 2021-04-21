@@ -1,4 +1,4 @@
-export function maximumProfit(stockPrices) {
+export function maximumProfit(stockPrices: number[]): number {
     if(stockPrices.length === 0) return 0
 
     let runningProfit = 0
