@@ -15,6 +15,7 @@ export function noStrangers(words: string) {
             if(strangers[word] === 3) {
                 acquaintances.push(word)
             } else if(strangers[word] === 5) {
+                acquaintances.splice(acquaintances.indexOf(word), 1)
                 friends.push(word)
             }
         } else {
