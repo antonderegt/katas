@@ -1,6 +1,6 @@
 import { shuffleCount, createDeck, faroShuffle, decksAreEqual } from './'
 
-describe('013 Faro Shuffle', () => {
+describe('Create deck', () => {
     test('5 should create deck: [1,2,3,4,5]', () => {
         expect(createDeck(5)).toEqual([1, 2, 3, 4, 5])
     })
@@ -8,7 +8,9 @@ describe('013 Faro Shuffle', () => {
     test('0 should create deck: []', () => {
         expect(createDeck(0)).toEqual([])
     })
+})
 
+describe('Compare two decks', () => {
     test('Same decks should be true', () => {
         expect(decksAreEqual([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])).toEqual(true)
     })
@@ -20,7 +22,9 @@ describe('013 Faro Shuffle', () => {
     test('Same deck different order should be false', () => {
         expect(decksAreEqual([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])).toEqual(false)
     })
+})
 
+describe('Shuffle a deck', () => {
     test('[1, 2, 3, 4] should be shuffled to [1, 3, 2, 4]', () => {
         expect(faroShuffle([1, 2, 3, 4])).toEqual([1, 3, 2, 4])
     })
@@ -37,6 +41,9 @@ describe('013 Faro Shuffle', () => {
         expect(faroShuffle([1, 3, 5, 7, 2, 4, 6, 8])).toEqual([1, 2, 3, 4, 5, 6, 7, 8])
     })
 
+})
+
+describe('Count required shuffles', () => {
     test('0 return 0', () => {
         expect(shuffleCount(0)).toBe(0)
     })
